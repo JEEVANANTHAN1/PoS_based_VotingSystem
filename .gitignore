@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Truffle specific
+artifacts/
+cache/
+
+# VS Code settings (optional)
+.vscode/
+
+# Coverage reports
+coverage/
+
+# Dependency directories
+.bun/
+
+# Hardhat (if used)
+cache/
+typechain/
+typechain-types/
+
+# IDE config (optional)
+.idea/
+*.iml
+
+# Generated files
+*.log

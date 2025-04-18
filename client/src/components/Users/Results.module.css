@@ -1,0 +1,81 @@
+.resultsContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff; /* White background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  min-width: 100vw;
+  box-sizing: border-box;
+}
+
+.resultsHeader {
+  font-size: 2rem; /* Larger font size for prominence */
+  font-weight: 600;
+  margin-bottom: 1.5rem; /* Increased margin for spacing */
+  text-align: center;
+  color: #000; /* Highlighted color for the header */
+}
+
+.textRed {
+  color: #f87171;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.resultsTable {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95); /* Slight transparency for the table background */
+  border-radius: 0.75rem;
+  color: #333; /* Dark text for readability */
+  border: 2px solid #ddd; /* Lighter border for subtle appearance */
+  animation: fadeIn 0.5s ease-in-out;
+  overflow-x: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resultsTable th,
+.resultsTable td {
+  padding: 1rem; /* Uniform padding */
+  text-align: left;
+  /* Subtle divider line */
+}
+
+.resultsTable th {
+  font-weight: bold;
+  /* Table header background */
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.resultsTable tbody tr:hover {
+  background-color: #f9fafb; /* Subtle hover effect for rows */
+}
+
+.resultsTable tbody tr:nth-child(odd) {
+  background-color: #f9fafb; /* Striping effect for better row differentiation */
+}
+
+.resultsTable tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.resultsTable td {
+  font-size: 1rem; /* Standard font size for table content */
+}
